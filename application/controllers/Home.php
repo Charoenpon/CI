@@ -9,15 +9,6 @@
 class Home extends CI_Controller
 {
     public function index(){
-        echo "Hello";
+        $this->load->view('home_view');
     }
- /**   public function test($name = "Mr.Charoenpon", $lastname ="Inpunkeaw"){
-        echo "My name is :".$name ." ". $lastname;
-    }
-
-    public function calculator($num1 , $num2)
-    {
-        echo $num1 + $num2;
-    }
-  */
 }
