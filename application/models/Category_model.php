@@ -8,5 +8,17 @@
  */
 class Category_model extends CI_Model
 {
-
+    public function getCategory()
+    {
+        return $this->db->get('category');
+        //SELECT * FROM category
+    }
+    public function insertCategory()
+    {
+        //
+        $data = array(
+            'name' => $name
+        );
+        $this->db->insert('category', $data);
+    }
 }
