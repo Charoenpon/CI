@@ -6,7 +6,7 @@
  * Date: 27/11/2559
  * Time: 10:40
  */
-class News_model
+class News_model extends CI_Model
 {
 
 }
