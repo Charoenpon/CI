@@ -10,15 +10,15 @@ class Category_model extends CI_Model
 {
     public function getCategory()
     {
-        return $this->db->get('category');
+        return $this->db->get('categories');
         //SELECT * FROM category
     }
-    public function insertCategory()
+    public function insertCategory($name)
     {
         //
         $data = array(
             'name' => $name
         );
-        $this->db->insert('category', $data);
+        $this->db->insert('categories', $data);
     }
 }
