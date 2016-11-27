@@ -24,8 +24,10 @@
                             <td>1</td>
                             <td><?php echo $c->name ?></td>
                             <td>
-                                <a href="#" class="btn btn-sm btn-warning"><i class="fa fa-edit"></i>แก้ไข</a>
-                                <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-times"></i>ลบ</a>
+                                <a href="<?php echo base_url('admin/edit_category/' . $c->categories_id) ?>"
+                                   class="btn btn-sm btn-warning"><i class="fa fa-edit"></i>แก้ไข</a>
+                                <a href="<?php echo base_url('admin/delete_category/' . $c->categories_id) ?>"
+                                   class="btn btn-sm btn-danger"><i class="fa fa-times"></i>ลบ</a>
                             </td>
                         </tr>
                     <?php }
